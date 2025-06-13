@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+}
+
+.page-layout {
+  display: flex;
+  justify-content: center;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  width: 80px;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.sidebar .menu-icon {
+  font-size: 24px;
+  color: orange;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.sidebar .nav-item {
+  padding: 10px 0;
+  font-size: 14px;
+  cursor: pointer;
+  color: gray;
+}
+
+.sidebar .nav-item.active {
+  color: orange;
+}
+
+/* Main Content Wrapper */
+.page-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Universal ShraVani Header */
+.logo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-header .logo {
+  background-color: orange;
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.logo-header .logo img {
+  width: 40px;
+}
+
+.logo-header .brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+
+/* Section Styling */
+.section-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  justify-items: center;
+}
+
+.book {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Now Playing Section */
+.currently-playing {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.chapter-image img {
+  width: 60px;
+  height: 80px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.chapter-info {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.chapter-info p {
+  margin: 0;
+  color: gray;
+  font-size: 14px;
+}
+
+.chapter-info h3 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.progress-bar {
+  background-color: #eee;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress {
+  background-color: orange;
+  height: 100%;
+  width: 60%;
+}
+
+.play-button-current {
+  background-color: orange;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
